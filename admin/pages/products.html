@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="../css/products.css">
+</head>
+<body>
+
+    <h1>Painel de Produtos</h1>
+
+    <div class="container">
+        <div class="form-box">
+            <h2>Novo Produto</h2>
+
+            <input type="hidden" id="product-id">
+            <input type="text" id="nome" placeholder="Nome">
+            <textarea id="descricao" placeholder="Descrição"></textarea>
+            <input type="number" id="preco" placeholder="Preço">
+            <input type="number" id="estoque" placeholder="Estoque">
+            <input type="text" id="imagem_url" placeholder="URL da imagem">
+
+            <select id="categoria">
+                <option value="">Selecione categoria</option>
+            </select>
+
+            <button onclick="salvarProduto()">
+                Salvar Produto
+            </button>
+        </div>
+
+        <div class="table-box">
+            <h2>Produtos</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Preço</th>
+                        <th>Estoque</th>
+                        <th>Categoria</th>
+                        <th>Imagem</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+
+                <tbody id="products-table"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="../js/products.js"></script>
+
+</body>
+</html>

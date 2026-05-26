@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Categorias</title>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/categories.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <h1>Gerenciar Categorias</h1>
+
+    <div class="form-container">
+      <input type="text" id="nome" placeholder="Nome da categoria">
+
+      <button onclick="criarCategoria()">
+        Criar Categoria
+      </button>
+    </div>
+
+    <div class="lista-container">
+      <h2>Lista de Categorias</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+
+        <tbody id="lista-categorias">
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="../js/categories.js"></script>
+
+</body>
+</html>
